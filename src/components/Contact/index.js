@@ -2,6 +2,9 @@ import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
 import { useRef } from 'react'
 
+import AOS from "aos"
+import "aos/dist/aos.css"
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faLinkedin,
@@ -25,13 +28,16 @@ const Contact = () => {
     }, 3000)
   }, [])
 
-
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh()
+  }, [])
 
   return (
     <>
       <div className="contact-page">
         <div className="text_zone">
-          <div className='form'>
+          <div className='form' data-aos="fade-right" data-aos-duration="1500">
             <h1 className='page-title'>
               <AnimatedLetters
                 letterClass={letterClass}
@@ -80,58 +86,58 @@ const Contact = () => {
               </form>
             </div>
           </div>
-          <img className='brick' src={m3} alt="brick_text" />
+          <img className='brick' src={m3} alt="brick_text" data-aos="fade-left" data-aos-duration="1500" />
         </div>
         <ul className='socials'>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/slobodan-gaji%C4%87-006bb8b8/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              color="#4d4d4e"
-              className="anchor-icon"
-            />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/bobangajicsm"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={faGithub}
-              color="#4d4d4e"
-              className="anchor-icon"
-            />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.youtube.com/channel/UCBu5ulO4d-d47lAVybpRTkw"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <FontAwesomeIcon
-              icon={faYoutube}
-              color="#4d4d4e"
-              className="anchor-icon"
-            />
-          </a>
-        </li>
-        <li>
-          <a href="skype:live:bobangajicsm" rel="noreferrer" target="_blank">
-            <FontAwesomeIcon
-              icon={faSkype}
-              color="#4d4d4e"
-              className="anchor-icon"
-            />
-          </a>
-        </li>
-      </ul>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/slobodan-gaji%C4%87-006bb8b8/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                color="#4d4d4e"
+                className="anchor-icon"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/bobangajicsm"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={faGithub}
+                color="#4d4d4e"
+                className="anchor-icon"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UCBu5ulO4d-d47lAVybpRTkw"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <FontAwesomeIcon
+                icon={faYoutube}
+                color="#4d4d4e"
+                className="anchor-icon"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="skype:live:bobangajicsm" rel="noreferrer" target="_blank">
+              <FontAwesomeIcon
+                icon={faSkype}
+                color="#4d4d4e"
+                className="anchor-icon"
+              />
+            </a>
+          </li>
+        </ul>
       </div>
       <Loader type="pacman" />
     </>

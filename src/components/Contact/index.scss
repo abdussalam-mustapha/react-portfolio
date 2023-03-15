@@ -144,14 +144,17 @@
 
     .form {
       width: 80%;
+      transform: translateY(-20rem) !important;
     }
 
     .brick {
       width: 50%;
-      margin-top: 10rem;
+      // margin-top: 10rem;
+      transform: translateY(-20rem) !important;
     }
   }
   .socials {
     display: flex;
+    transform: translateY(-20rem);
   }
 }

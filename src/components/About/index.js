@@ -1,15 +1,9 @@
 import { useEffect, useState } from 'react'
-import {
-  faAngular,
-  faCss3,
-  faGitAlt,
-  faHtml5,
-  faJsSquare,
-  faReact,
-} from '@fortawesome/free-brands-svg-icons'
+
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import AOS from "aos"
+import "aos/dist/aos.css"
 import './index.scss'
 
 import coder from "../../images/gif.gif"
@@ -23,10 +17,16 @@ const About = () => {
     }, 3000)
   }, [])
 
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh()
+}, [])
+
+
   return (
     <>
       <div className="about-page">
-        <div className="text-zone">
+        <div className="text-zone" data-aos="fade-right" data-aos-duration="1500">
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
@@ -50,7 +50,7 @@ const About = () => {
           </p>
         </div>
 
-        <img src={coder} alt="coder"/>
+        <img src={coder} alt="coder"  data-aos="fade-left" data-aos-duration="1500"/>
       </div>
       <Loader type="pacman" />
     </>

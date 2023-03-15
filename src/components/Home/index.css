@@ -127,25 +127,29 @@
     margin-top: 10rem !important;
   }
   .home-page .m_img {
-    margin-top: 16rem !important;
+    margin-top: 16rem;
   }
 }
 @media screen and (max-width: 568px) {
-  .home-page h1 {
+  .home-page .text-zone {
+    transform: translateY(-5rem) !important;
+    padding-bottom: 1rem !important;
+  }
+  .home-page .text-zone h1 {
     font-size: 3.3rem !important;
     text-align: center;
   }
-  .home-page .btn {
+  .home-page .text-zone .btn {
     flex-direction: column !important;
     justify-content: center;
     align-items: center;
   }
-  .home-page .btn .button {
+  .home-page .text-zone .btn .button {
     margin-left: 0 !important;
   }
-  .home-page .m_img {
+  .home-page .text-zone .m_img {
     width: 80% !important;
     height: 80% !important;
-    margin-top: 17rem !important;
+    transform: translateY(-35rem) !important;
   }
 }/*# sourceMappingURL=index.css.map */

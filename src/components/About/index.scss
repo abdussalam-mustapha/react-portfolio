@@ -27,7 +27,7 @@
   .about-page {
     flex-direction: column;
     justify-content: center;
-    transform: translateY(20%);
+    transform: translateY(-10%) !important;
 
     .text-zone {
       width: 80%;

@@ -3,6 +3,9 @@ import Loader from "react-loaders";
 import AnimatedLetters from "../AnimatedLetters";
 import "./index.scss";
 
+import AOS from "aos"
+import "aos/dist/aos.css"
+
 import img_1 from "../Portfolio/images/1.jpg"
 import img_2 from "../Portfolio/images/2.jpg"
 import img_3 from "../Portfolio/images/3.jpg"
@@ -12,12 +15,9 @@ import img_7 from "../Portfolio/images/c.jpg"
 import img_8 from "../Portfolio/images/d.jpg"
 import img_9 from "../Portfolio/images/s.jpg"
 
-// import { getDocs, collection } from 'firebase/firestore';
-// import { db } from '../../firebase';
 
 const Portfolio = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
-    // const [portfolio, setPortfolio] = useState([]);
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -28,6 +28,11 @@ const Portfolio = () => {
             clearTimeout(timer);
         }
     });
+
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh()
+    }, [])
 
     const portfolio = [
         {
@@ -88,22 +93,13 @@ const Portfolio = () => {
         },
     ]
 
-    // useEffect(() => {
-    //     getPortfolio();
-    // }, []);
-
-    // const getPortfolio = async () => {
-    //     const querySnapshot = await getDocs(collection(db, 'portfolio'));
-    //     setPortfolio(querySnapshot.docs.map((doc) => doc.data()));
-    // }
-
     const renderPortfolio = (portfolio) => {
         return (
             <div className="images-container">
                 {
                     portfolio.map((port, idx) => {
                         return (
-                            <div className="image-box" key={idx}>
+                            <div className="image-box" key={idx} data-aos="fade-up" data-aos-duration="1500">
                                 <img
                                     src={port.image}
                                     className="portfolio-image"
@@ -136,43 +132,7 @@ const Portfolio = () => {
                     />
                 </h1>
                 <br /> <br />
-                <h1 className="page-title">
-                    <AnimatedLetters
-                        letterClass={letterClass}
-                        strArray={"Web Projects".split("")}
-                        idx={15}
-                    />
-                </h1>
-
                 <div>{renderPortfolio(portfolio)}</div>
-                <h1 className="page-title">
-                    <AnimatedLetters
-                        letterClass={letterClass}
-                        strArray={"Mobile app Projects.".split("")}
-                        idx={15}
-                    />
-                </h1>
-                <h1 className="page-title">
-                    <AnimatedLetters
-                        letterClass={letterClass}
-                        strArray={"COMING SOON...".split("")}
-                        idx={15}
-                    />
-                </h1>
-                <h1 className="page-title">
-                    <AnimatedLetters
-                        letterClass={letterClass}
-                        strArray={"Blockchain Projects.".split("")}
-                        idx={15}
-                    />
-                </h1>
-                <h1 className="page-title">
-                    <AnimatedLetters
-                        letterClass={letterClass}
-                        strArray={"COMING SOON...".split("")}
-                        idx={15}
-                    />
-                </h1>
             </div>
             <Loader type="pacman" />
         </>

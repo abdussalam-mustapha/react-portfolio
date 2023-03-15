@@ -6,6 +6,9 @@ import img_1 from "../../images/musty.png"
 import Logo from './Logo'
 import './index.scss'
 
+import AOS from "aos"
+import "aos/dist/aos.css"
+
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
@@ -22,10 +25,6 @@ const Home = () => {
     'a',
     'c',
     'k',
-    '_',
-    'w',
-    'e',
-    'b',
     '_',
     'd',
     'e',
@@ -45,10 +44,15 @@ const Home = () => {
     }, 4000)
   }, [])
 
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh()
+  }, [])
+
   return (
     <>
       <div className="home-page">
-        <div className="text-zone">
+        <div className="text-zone" data-aos="fade-right" data-aos-duration="1500">
           <h1>
             <span className={letterClass}>H</span>
             <span className={`${letterClass} _12`}>i_</span>
@@ -80,7 +84,7 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <img src={img_1} alt="web dev" className='m_img'></img>
+        <img src={img_1} alt="web dev" className='m_img' data-aos="fade-left" data-aos-duration="1500"/>
       </div>
 
       <Loader type="pacman" />
