@@ -122,14 +122,14 @@
   }
   .text_zone .form {
     width: 80%;
-    transform: translateY(-20rem) !important;
+    transform: translateY(-15rem) !important;
   }
   .text_zone .brick {
     width: 50%;
-    transform: translateY(-20rem) !important;
+    transform: translateY(-10rem) !important;
   }
   .socials {
     display: flex;
-    transform: translateY(-20rem);
+    transform: translateY(-2rem);
   }
 }/*# sourceMappingURL=index.css.map */

@@ -116,12 +116,12 @@
     font-size: 2.5rem !important;
     color: #2bff00 !important;
     margin-left: 15px !important;
-    transform: translateY(-15rem) !important;
+    transform: translateY(-7rem) !important;
   }
   .portfolio-page .images-container {
     flex-direction: column !important;
     width: 90% !important;
-    transform: translateY(-20rem) !important;
+    transform: translateY(-15rem) !important;
   }
   .portfolio-page .images-container .image-box {
     width: 80% !important;
