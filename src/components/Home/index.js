@@ -1,0 +1,91 @@
+import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
+import Loader from 'react-loaders'
+import AnimatedLetters from '../AnimatedLetters'
+import img_1 from "../../images/musty.png"
+import Logo from './Logo'
+import './index.scss'
+
+const Home = () => {
+  const [letterClass, setLetterClass] = useState('text-animate')
+
+  const nameArray = ['M', 'u', 's', 't', 'a', 'p', 'h', 'a', ',',' ','(','t','h','e','_','c','o','d','e','_','n','i','n','j','a',')',',']
+  const jobArray = [
+    'a',
+    '_',
+    'f',
+    'u',
+    'l',
+    'l',
+    's',
+    't',
+    'a',
+    'c',
+    'k',
+    '_',
+    'w',
+    'e',
+    'b',
+    '_',
+    'd',
+    'e',
+    'v',
+    'e',
+    'l',
+    'o',
+    'p',
+    'e',
+    'r',
+    '.',
+  ]
+
+  useEffect(() => {
+    return setTimeout(() => {
+      setLetterClass('text-animate-hover')
+    }, 4000)
+  }, [])
+
+  return (
+    <>
+      <div className="home-page">
+        <div className="text-zone">
+          <h1>
+            <span className={letterClass}>H</span>
+            <span className={`${letterClass} _12`}>i_</span>
+            
+            <span className={`${letterClass} _13`}>I</span>
+            <span className={`${letterClass} _14`}>'m_</span>
+            {/* <img
+              src={LogoTitle}
+              alt="JavaScript Developer Name, Web Developer Name"
+            /> */}
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={nameArray}
+              idx={1}
+            />
+            <br />
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={jobArray}
+              idx={10}
+            />
+          </h1>
+          <div className='btn'>
+            <Link to="/contact" className="flat-button">
+              CONTACT ME
+            </Link>
+            <Link to="/contact" className="button">
+              DOWNLOAD CV
+            </Link>
+          </div>
+        </div>
+        <img src={img_1} alt="web dev" className='m_img'></img>
+      </div>
+
+      <Loader type="pacman" />
+    </>
+  )
+}
+
+export default Home
