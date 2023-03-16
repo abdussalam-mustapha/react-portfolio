@@ -12,10 +12,10 @@ import "aos/dist/aos.css"
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
-  const nameArray = ['M', 'u', 's', 't', 'a', 'p', 'h', 'a', ',',' ','(','t','h','e','_','c','o','d','e','_','n','i','n','j','a',')',',']
+  const nameArray = ['M', 'u', 's', 't', 'a', 'p', 'h', 'a', ',',' ','(','t','h','e',' ','c','o','d','e',' ','n','i','n','j','a',')',',']
   const jobArray = [
     'a',
-    '_',
+    ' ',
     'f',
     'u',
     'l',
@@ -25,7 +25,7 @@ const Home = () => {
     'a',
     'c',
     'k',
-    '_',
+    ' ',
     'd',
     'e',
     'v',
@@ -55,14 +55,10 @@ const Home = () => {
         <div className="text-zone" data-aos="fade-right" data-aos-duration="1500">
           <h1>
             <span className={letterClass}>H</span>
-            <span className={`${letterClass} _12`}>i_</span>
-            
+            <span className={`${letterClass} _12`}>i,</span>
+            <br />
             <span className={`${letterClass} _13`}>I</span>
-            <span className={`${letterClass} _14`}>'m_</span>
-            {/* <img
-              src={LogoTitle}
-              alt="JavaScript Developer Name, Web Developer Name"
-            /> */}
+            <span className={`${letterClass} _14`}>'m</span>
             <AnimatedLetters
               letterClass={letterClass}
               strArray={nameArray}

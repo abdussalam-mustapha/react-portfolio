@@ -40,28 +40,28 @@ const Portfolio = () => {
             image: img_3,
             name: "Getblack",
             description: "Vanilla js | React | SCSS | Nodejs | Express | Mongoose | MongoDb",
-            url: "getblack.ca"
+            url: "https://getblack.ca"
         },
         {
             id: 1,
             image: img_1,
             name: "One wallet",
             description: "React | SCSS",
-            url: "one-walllet.vercel.app"
+            url: "https://one-walllet.vercel.app"
         },
         {
             id: 2,
             image: img_7,
             name: "Credivore",
             description: "React | SCSS | AOS",
-            url: "credivore.netlify.app"
+            url: "https://credivore.netlify.app"
         },
         {
             id: 3,
             image: img_8,
             name: "Melody",
             description: "HTML | CSS | Vanilla Js",
-            url: "abdussalam-mustapha.github.io/OLM"
+            url: "https://abdussalam-mustapha.github.io/OLM"
         },
         {
             id: 4,
@@ -75,7 +75,7 @@ const Portfolio = () => {
             image: img_5,
             name: "Loyalbaze",
             description: "React | CSS ",
-            url: "loyalbaze.vercel.app"
+            url: "https://loyalbaze.vercel.app"
         },
         {
             id: 6,
@@ -110,7 +110,7 @@ const Portfolio = () => {
                                     <button
                                         className="btn"
                                         onClick={() => window.open(port.url)}
-                                    >View</button>
+                                    >View</button>                   
                                 </div>
                             </div>
                         )

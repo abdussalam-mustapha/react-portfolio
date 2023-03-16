@@ -104,6 +104,15 @@ const Sidebar = () => {
             />
           </a>
         </li>
+        <li>
+          <a href="mailto:abdussalammustapha07@gmail.com" rel="noreferrer" target="_blank">
+            <FontAwesomeIcon
+              icon={faEnvelope}
+              color="#4d4d4e"
+              className="anchor-icon"
+            />
+          </a>
+        </li>
       </ul>
       <FontAwesomeIcon 
           onClick={() => setShowNav(true)}

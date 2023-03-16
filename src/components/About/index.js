@@ -35,18 +35,25 @@ const About = () => {
             />
           </h1>
           <p>
-            I'm a very ambitious front-end developer looking for a role in an
-            established IT company with the opportunity to work with the latest
-            technologies on challenging and diverse projects.
+            I'm passionate about building scalable and user friendly web applications
+            using the latest technologies.
           </p>
           <p align="LEFT">
-            I'm quiet confident, naturally curious, and perpetually working on
-            improving my chops one design problem at a time.
+            I'a MERN stack developer, I use HTML, CSS (and its libraries), Javascript,
+            React and Nextjs for frontend development and for for backend I use Nodejs, I am also
+            proficient in using databases such as MySQL and MongoDB.
           </p>
           <p>
-            If I need to define myself in one sentence that would be a family
-            person, father of a beautiful daughter, a sports fanatic,
-            photography enthusiast, and tech-obsessed!!!
+            In addition to my technical skills, I have excellent problem solving abilities, and
+            enjoy working collaboratively as a team. I am constantly learning and staying up-to-date
+            with the latest technologies and trends in the industry.
+          </p>
+          <p>
+            I am excited to bring my skills to new and challenging projects and look forward to the
+            opportunity to work with innovative companies and teams.
+          </p>
+          <p>
+            Fun facts about me:- I love football, watching animes and of course eating. LOL.
           </p>
         </div>
 
