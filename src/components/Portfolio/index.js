@@ -82,14 +82,14 @@ const Portfolio = () => {
             image: img_2,
             name: "Mock-up portfolio",
             description: "React | Tailwind CSS",
-            url: ""
+            url: "https://ama-v01.vercel.app"
         },
         {
             id: 7,
             image: img_9,
             name: "Youtube clone",
-            description: "lord musty lives on",
-            url: "Reactjs | CSS"
+            description: "React | CSS | Shell",
+            url: "https://youtube-clone-self.vercel.app"
         },
     ]
 
