@@ -6,6 +6,7 @@ import "./index.scss";
 import AOS from "aos"
 import "aos/dist/aos.css"
 
+import img_0 from "../Portfolio/images/mave.jpg"
 import img_1 from "../Portfolio/images/1.jpg"
 import img_2 from "../Portfolio/images/2.jpg"
 import img_3 from "../Portfolio/images/3.jpg"
@@ -37,59 +38,66 @@ const Portfolio = () => {
     const portfolio = [
         {
             id: 0,
+            image: img_0,
+            name: "My Portfolio",
+            description: "Vanilla js | React | SCSS | Nodejs | MongoDB",
+            url: "https:mavedadev.vercel.app"
+        },
+        {
+            id: 1,
             image: img_3,
             name: "Getblack",
             description: "Vanilla js | React | SCSS | Nodejs | Express | Mongoose | MongoDb",
             url: "https://getblack.ca"
         },
         {
-            id: 1,
+            id: 2,
             image: img_1,
             name: "One wallet",
             description: "React | SCSS",
             url: "https://one-walllet.vercel.app"
         },
         {
-            id: 2,
+            id: 3,
             image: img_7,
             name: "Credivore",
             description: "React | SCSS | AOS",
             url: "https://credivore.netlify.app"
         },
         {
-            id: 3,
+            id: 4,
             image: img_8,
             name: "Melody",
             description: "HTML | CSS | Vanilla Js",
             url: "https://abdussalam-mustapha.github.io/OLM"
         },
         {
-            id: 4,
+            id: 5,
             image: img_6,
             name: "Style conference",
             description: "HTML | CSS | Vanilla Js",
             url: ""
         },
         {
-            id: 5,
+            id: 6,
             image: img_5,
             name: "Loyalbaze",
             description: "React | CSS ",
             url: "https://loyalbaze.vercel.app"
         },
         {
-            id: 6,
+            id: 7,
             image: img_2,
             name: "Mock-up portfolio",
             description: "React | Tailwind CSS",
-            url: "https://ama-v01.vercel.app"
+            // url: "https://ama-v01.vercel.app"
         },
         {
-            id: 7,
+            id: 8,
             image: img_9,
             name: "Youtube clone",
             description: "React | CSS | Shell",
-            url: "https://youtube-clone-self.vercel.app"
+            // url: "https://youtube-clone-self.vercel.app"
         },
     ]
 
