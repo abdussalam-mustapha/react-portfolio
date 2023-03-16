@@ -90,14 +90,14 @@ const Portfolio = () => {
             image: img_2,
             name: "Mock-up portfolio",
             description: "React | Tailwind CSS",
-            // url: "https://ama-v01.vercel.app"
+            url: "https://ama-v01.vercel.app"
         },
         {
             id: 8,
             image: img_9,
             name: "Youtube clone",
             description: "React | CSS | Shell",
-            // url: "https://youtube-clone-self.vercel.app"
+            url: "https://youtube-clone-self.vercel.app"
         },
     ]
 
@@ -107,6 +107,7 @@ const Portfolio = () => {
                 {
                     portfolio.map((port, idx) => {
                         return (
+                            <a href={port.url}>
                             <div className="image-box" key={idx} data-aos="fade-up" data-aos-duration="1500">
                                 <img
                                     src={port.image}
@@ -121,6 +122,7 @@ const Portfolio = () => {
                                     >View</button>                   
                                 </div>
                             </div>
+                            </a>
                         )
                     })
                 }
