@@ -41,7 +41,7 @@ const Portfolio = () => {
             image: img_0,
             name: "My Portfolio",
             description: "Vanilla js | React | SCSS | Nodejs | MongoDB",
-            url: "https:mavedadev.vercel.app"
+            url: "https:mavedadev-abdussalam-mustapha.vercel.app"
         },
         {
             id: 1,
