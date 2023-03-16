@@ -12,7 +12,7 @@ import "aos/dist/aos.css"
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
-  const nameArray = ['M', 'u', 's', 't', 'a', 'p', 'h', 'a', ',',' ','(','t','h','e',' ','c','o','d','e',' ','n','i','n','j','a',')',',']
+  const nameArray = ['M', 'u', 's', 't', 'a', 'p', 'h', 'a', ',', ' ', '(', 't', 'h', 'e', ' ', 'c', 'o', 'd', 'e', ' ', 'n', 'i', 'n', 'j', 'a', ')', ',']
   const jobArray = [
     'a',
     ' ',
@@ -59,17 +59,19 @@ const Home = () => {
             <br />
             <span className={`${letterClass} _13`}>I</span>
             <span className={`${letterClass} _14`}>'m</span>
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={nameArray}
-              idx={1}
-            />
-            <br />
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={jobArray}
-              idx={10}
-            />
+            <span className='m_n'>
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={nameArray}
+                idx={1}
+              />
+              <br />
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={jobArray}
+                idx={10}
+              />
+            </span>
           </h1>
           <div className='btn'>
             <Link to="/contact" className="flat-button">
@@ -80,7 +82,7 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <img src={img_1} alt="web dev" className='m_img' data-aos="fade-left" data-aos-duration="1500"/>
+        <img src={img_1} alt="web dev" className='m_img' data-aos="fade-left" data-aos-duration="1500" />
       </div>
 
       <Loader type="pacman" />

@@ -39,8 +39,8 @@ const About = () => {
             using the latest technologies.
           </p>
           <p align="LEFT">
-            I'a MERN stack developer, I use HTML, CSS (and its libraries), Javascript,
-            React and Nextjs for frontend development and for for backend I use Nodejs, I am also
+            I'm a MERN stack developer, I use HTML, CSS (and its libraries), Javascript,
+            React and Nextjs for frontend development and for for backend I use Nodejs and Express, I am also
             proficient in using databases such as MySQL and MongoDB.
           </p>
           <p>
