@@ -144,6 +144,7 @@
     justify-content: center;
     align-items: center;
     margin: 3rem 0;
+    color: #fff !important;
   }
   .nav-bar nav a:after {
     opacity: 1;
