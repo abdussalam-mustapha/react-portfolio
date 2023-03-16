@@ -9,8 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faLinkedin,
   faGithub,
-  faYoutube,
-  faSkype,
+  faTwitter,
 } from '@fortawesome/free-brands-svg-icons'
 
 import AnimatedLetters from '../AnimatedLetters'
@@ -89,55 +88,42 @@ const Contact = () => {
           <img className='brick' src={m3} alt="brick_text" data-aos="fade-left" data-aos-duration="1500" />
         </div>
         <ul className='socials'>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/slobodan-gaji%C4%87-006bb8b8/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FontAwesomeIcon
-                icon={faLinkedin}
-                color="#4d4d4e"
-                className="anchor-icon"
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/bobangajicsm"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FontAwesomeIcon
-                icon={faGithub}
-                color="#4d4d4e"
-                className="anchor-icon"
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.youtube.com/channel/UCBu5ulO4d-d47lAVybpRTkw"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <FontAwesomeIcon
-                icon={faYoutube}
-                color="#4d4d4e"
-                className="anchor-icon"
-              />
-            </a>
-          </li>
-          <li>
-            <a href="skype:live:bobangajicsm" rel="noreferrer" target="_blank">
-              <FontAwesomeIcon
-                icon={faSkype}
-                color="#4d4d4e"
-                className="anchor-icon"
-              />
-            </a>
-          </li>
-        </ul>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/abdussalam-mustapha-53a312238/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              color="#4d4d4e"
+              className="anchor-icon"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/abdussalam-mustapha"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={faGithub}
+              color="#4d4d4e"
+              className="anchor-icon"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/mustaph10543271" rel="noreferrer" target="_blank">
+            <FontAwesomeIcon
+              icon={faTwitter}
+              color="#4d4d4e"
+              className="anchor-icon"
+            />
+          </a>
+        </li>
+      </ul>
       </div>
       <Loader type="pacman" />
     </>

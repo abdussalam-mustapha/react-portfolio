@@ -1,6 +1,6 @@
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 body {
@@ -10,7 +10,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #161616ec;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   display: block;
 }
 

@@ -3,6 +3,7 @@
   padding-right: 50px;
   width: calc(100% - 150px);
   height: 100%;
+  overflow-x: hidden;
 }
 .portfolio-page h1.page-title {
   margin-left: 100px;
@@ -109,7 +110,7 @@
 }
 @media screen and (max-width: 450px) {
   .portfolio-page {
-    width: 100% !important;
+    width: 90% !important;
     padding: 0 10px;
   }
   .portfolio-page .page-title {
@@ -120,11 +121,11 @@
   }
   .portfolio-page .images-container {
     flex-direction: column !important;
-    width: 90% !important;
+    width: 95% !important;
     transform: translateY(-15rem) !important;
   }
   .portfolio-page .images-container .image-box {
-    width: 80% !important;
+    width: 90% !important;
     margin: -5rem !important;
   }
   .portfolio-page .images-container .image-box .portfolio-image {

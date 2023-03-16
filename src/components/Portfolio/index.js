@@ -37,59 +37,59 @@ const Portfolio = () => {
     const portfolio = [
         {
             id: 0,
-            image: img_1,
-            name: "mustysama",
-            description: "lord musty lives on"
-
+            image: img_3,
+            name: "Getblack",
+            description: "Vanilla js | React | SCSS | Nodejs | Express | Mongoose | MongoDb",
+            url: "getblack.ca"
         },
         {
             id: 1,
-            image: img_2,
-            name: "mustysama",
-            description: "lord musty lives on"
-
+            image: img_1,
+            name: "One wallet",
+            description: "React | SCSS",
+            url: "one-walllet.vercel.app"
         },
         {
             id: 2,
-            image: img_3,
-            name: "mustysama",
-            description: "lord musty lives on"
-
+            image: img_7,
+            name: "Credivore",
+            description: "React | SCSS | AOS",
+            url: "credivore.netlify.app"
         },
         {
             id: 3,
-            image: img_5,
-            name: "mustysama",
-            description: "lord musty lives on"
-
+            image: img_8,
+            name: "Melody",
+            description: "HTML | CSS | Vanilla Js",
+            url: "abdussalam-mustapha.github.io/OLM"
         },
         {
             id: 4,
             image: img_6,
-            name: "mustysama",
-            description: "lord musty lives on"
-
+            name: "Style conference",
+            description: "HTML | CSS | Vanilla Js",
+            url: ""
         },
         {
             id: 5,
-            image: img_7,
-            name: "mustysama",
-            description: "lord musty lives on"
-
+            image: img_5,
+            name: "Loyalbaze",
+            description: "React | CSS ",
+            url: "loyalbaze.vercel.app"
         },
         {
             id: 6,
-            image: img_8,
-            name: "mustysama",
-            description: "lord musty lives on"
-
+            image: img_2,
+            name: "Mock-up portfolio",
+            description: "React | Tailwind CSS",
+            url: ""
         },
         {
             id: 7,
             image: img_9,
-            name: "mustysama",
-            description: "lord musty lives on"
-
+            name: "Youtube clone",
+            description: "lord musty lives on",
+            url: "Reactjs | CSS"
         },
     ]
 

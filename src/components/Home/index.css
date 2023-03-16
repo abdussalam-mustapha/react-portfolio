@@ -131,6 +131,9 @@
   }
 }
 @media screen and (max-width: 568px) {
+  .home-page {
+    width: 90% !important;
+  }
   .home-page .text-zone {
     transform: translateY(3rem) !important;
     padding: 0 2rem 2rem 2rem !important;
