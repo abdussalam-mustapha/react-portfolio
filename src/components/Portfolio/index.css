@@ -120,14 +120,22 @@
   }
   .portfolio-page .images-container {
     flex-direction: column !important;
-    width: 95% !important;
+    width: 100% !important;
     transform: translateY(-15rem) !important;
   }
   .portfolio-page .images-container .image-box {
-    width: 90% !important;
+    width: 100% !important;
+    height: 500px !important;
     margin: -2rem !important;
   }
   .portfolio-page .images-container .image-box .portfolio-image {
-    height: 260px;
+    height: 280px !important;
+  }
+  .portfolio-page .images-container .image-box .content {
+    bottom: -1rem;
+    background-color: #181818;
+  }
+  .portfolio-page .images-container .image-box:after {
+    height: 72% !important;
   }
 }/*# sourceMappingURL=index.css.map */
