@@ -126,16 +126,16 @@
   .portfolio-page .images-container .image-box {
     width: 100% !important;
     height: 500px !important;
-    margin: -2rem !important;
+    margin: -3rem !important;
   }
   .portfolio-page .images-container .image-box .portfolio-image {
-    height: 305px !important;
+    height: 325px !important;
   }
   .portfolio-page .images-container .image-box .content {
     bottom: -1rem;
     background-color: #181818;
   }
   .portfolio-page .images-container .image-box:after {
-    height: 70% !important;
+    height: 68% !important;
   }
 }/*# sourceMappingURL=index.css.map */
