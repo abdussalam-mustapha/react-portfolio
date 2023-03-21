@@ -15,6 +15,8 @@ import img_6 from "../Portfolio/images/b.jpg"
 import img_7 from "../Portfolio/images/c.jpg"
 import img_8 from "../Portfolio/images/d.jpg"
 import img_9 from "../Portfolio/images/s.jpg"
+import img_11 from "../Portfolio/images/fylo.jpg"
+import img_10 from "../Portfolio/images/easyabnk.jpg"
 
 
 const Portfolio = () => {
@@ -73,27 +75,41 @@ const Portfolio = () => {
         },
         {
             id: 5,
-            image: img_6,
+            image: img_10,
             name: "Style conference",
             description: "HTML | CSS | Vanilla Js",
             url: ""
         },
         {
             id: 6,
+            image: img_11,
+            name: "EasyBank",
+            description: "HTML | CSS | Vanilla Js",
+            url: ""
+        },
+        {
+            id: 7,
+            image: img_6,
+            name: "Fylo",
+            description: "HTML | CSS | Vanilla Js",
+            url: ""
+        },
+        {
+            id: 8,
             image: img_5,
             name: "Loyalbaze",
             description: "React | CSS ",
             url: "https://loyalbaze.vercel.app"
         },
         {
-            id: 7,
+            id: 9,
             image: img_2,
             name: "Mock-up portfolio",
             description: "React | Tailwind CSS",
             url: "https://ama-v01.vercel.app"
         },
         {
-            id: 8,
+            id: 10,
             image: img_9,
             name: "Youtube clone",
             description: "React | CSS | Shell",

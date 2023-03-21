@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import img_1 from "../../images/musty.png"
+import cv from "../../images/resume.pdf"
 import Logo from './Logo'
 import './index.scss'
 
@@ -74,12 +75,12 @@ const Home = () => {
             </span>
           </h1>
           <div className='btn'>
-            <Link to="/contact" className="flat-button">
-              CONTACT ME
+            <Link to="/about" className="flat-button">
+              About Me
             </Link>
-            <Link to="/contact" className="button">
+            <a to="" className="button" href={cv} download="abdussalam-mustapha-resume">
               DOWNLOAD CV
-            </Link>
+            </a>
           </div>
         </div>
         <img src={img_1} alt="web dev" className='m_img' data-aos="fade-left" data-aos-duration="1500" />
