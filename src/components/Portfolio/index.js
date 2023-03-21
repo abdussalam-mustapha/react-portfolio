@@ -76,9 +76,9 @@ const Portfolio = () => {
         {
             id: 5,
             image: img_10,
-            name: "Style conference",
+            name: "Fylo",
             description: "HTML | CSS | Vanilla Js",
-            url: ""
+            url: "https://fylo-one-nu.vercel.app"
         },
         {
             id: 6,
@@ -90,9 +90,9 @@ const Portfolio = () => {
         {
             id: 7,
             image: img_6,
-            name: "Fylo",
+            name: "Style conference",
             description: "HTML | CSS | Vanilla Js",
-            url: "https://fylo-one-nu.vercel.app"
+            url: ""
         },
         {
             id: 8,
