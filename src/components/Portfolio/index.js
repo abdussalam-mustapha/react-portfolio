@@ -85,14 +85,14 @@ const Portfolio = () => {
             image: img_11,
             name: "EasyBank",
             description: "HTML | CSS | Vanilla Js",
-            url: ""
+            url: "https:/easybank-steel.vercel.app"
         },
         {
             id: 7,
             image: img_6,
             name: "Fylo",
             description: "HTML | CSS | Vanilla Js",
-            url: ""
+            url: "https://fylo-one-nu.vercel.app"
         },
         {
             id: 8,
