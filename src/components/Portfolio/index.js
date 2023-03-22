@@ -77,7 +77,7 @@ const Portfolio = () => {
             id: 5,
             image: img_10,
             name: "Easybank",
-            description: "HTML | CSS | Vanilla Js",
+            description: "HTML | Tailwind CSS | Vanilla Js",
             url: "https://easybank-steel.vercel.app"
         },
         {
@@ -85,7 +85,7 @@ const Portfolio = () => {
             image: img_11,
             name: "Fylo",
             description: "HTML | CSS | Vanilla Js",
-            url: "https://fylo-one-nu.vercel.app/"
+            url: ""
         },
         {
             id: 7,
